@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 
 exports.handler = async () => {
-  var fetchResponse = await fetch(
+  const fetchResponse = await fetch(
     "https://jsonplaceholder.typicode.com/todos/1"
   );
 
@@ -10,6 +10,7 @@ exports.handler = async () => {
       statusCode: 200,
       body: JSON.stringify(await fetchResponse.json()),
     };
+
     return response;
   }
 
