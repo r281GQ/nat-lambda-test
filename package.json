@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "bundle": "rm -rf bundle.zip && zip -r bundle.zip ."
+  },
   "dependencies": {
     "node-fetch": "^2.6.0"
   }
